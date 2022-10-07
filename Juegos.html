@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JUEGOS</title>
+</head>
+<body>
+
+    <a href="index.html"><p class="button"> Pagina Principal</p></a>
+
+    <div class="contenedor">
+        <img src="fts/memorama.png" width="40%" height="40%"  class="memorama" id="prueba">
+        
+        <img src="fts/puzzleft.png" width="40%" height="40%"  class="puzzle" id="prueba2">
+    </div>
+
+
+    <style>
+
+        body{
+            background-color: rgb(131, 88, 172);
+        }
+
+        .button {
+            background-color: rgb(179, 61, 248); 
+            border-radius: 25% 10%;
+            color: black;
+            box-shadow: 0px 0px 20px rgb(114, 0, 180) inset, 0px 0px 25px white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border: #000 solid 2px;
+            transition: 0.5s;
+            object-fit: cover;
+            }
+
+        img{
+            transition: 0.5s;
+            object-fit: cover;
+        }
+
+        img:hover{
+            transform: scale(1.2);
+        }
+
+        .button:hover{
+            transform: scale(1.2);
+        }
+
+        .contenedor{
+            display: flex;
+            justify-content: center;
+            margin-top: 10%;
+
+        }
+
+        .memorama{
+            margin-right: 20px;
+            border: black solid 2px;
+            border-radius: 20px;
+        }
+
+        .puzzle{
+            margin-left: 20px;
+            border: black solid 2px;
+            border-radius: 20px;
+        }
+
+    </style>
+    
+
+    <script>
+
+                document.getElementById("prueba").onclick = function () {
+                location.href = "memo.html";
+            };
+
+            document.getElementById("prueba2").onclick = function () {
+                location.href = "puzzle.html";
+            };
+
+    </script>
+</body>
+</html>
